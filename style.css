@@ -38,8 +38,8 @@ background-position: center;
     box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75)
 }
 
-h4{
-    color: white;
+h3{
+    color: #e213a4;
     font-size:30px;
     font-weight: 600;
     margin: 0 0 35px 0;
@@ -102,11 +102,29 @@ button[type="button"] {
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-} 
 
-button[type="button"]:hover{
-    background:#2691d9 ;
+    
+        /*position: absolute;
+        top: 50%;
+        left: 50%;*/
+        /*transform: translate(-50%,-50%);
+        /*width: 200px;*/
+        /*height: 60px;*/
+        /*text-align: center;
+        /*line-height: 60px;
+        color: #fff;
+        font-size: 24px;
+        /*text-transform: uppercase;
+        text-decoration: none;*/
+        
 }
+      
+.btn:hover{
+background: rgb(76, 158, 224);
+}    
+
+
+
 
 .login{
     color:white;
@@ -125,6 +143,7 @@ button[type="button"]:hover{
     height: 42px;
     line-height: 45px;
     margin-top:10px;
+    border-radius: 5px;
    
 }
 .facebook{
@@ -133,10 +152,19 @@ button[type="button"]:hover{
     
 }
 
+.facebook:hover{
+    transform: translatey(-7px);
+}
+
 .instagram{
     background: #E1306C;
     border: 1px solid #df2060;
     margin-left:20px;
+    
+}
+
+.instagram:hover{
+    transform: translatey(-7px);
 }
 
 .link span{
