@@ -196,7 +196,7 @@ background: rgb(76, 158, 224);
     cursor: pointer;
     display: none;
 }
-
+/*show password*/
 .password:valid ~ .show{
     display:block;
 }
