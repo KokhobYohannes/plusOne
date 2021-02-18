@@ -1,4 +1,4 @@
-*{
+/*{ 
     margin: 0;
     padding; 0;
     box-sizing: border-box;
@@ -11,6 +11,7 @@
 section{
 background-color: #272629;
 height: 100vh;
+width: auto;
 background-size: cover;
 background-position: center;
 }
@@ -32,6 +33,7 @@ background-position: center;
     transform: translate(-50%,-50%);
     text-align: center; 
     padding: 60px 100px;
+    width: auto;
     background: rgba(255,255,255,0.04);
     box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75)
 }
@@ -160,7 +162,15 @@ button[type="button"]:hover{
 .show{
     position: absolute;
     right: 13px;
-    text-align: center;
+    top: -10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+}
+
+.password:valid ~ .show{
+    display:block;
 }
 
 
