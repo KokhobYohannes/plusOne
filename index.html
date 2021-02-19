@@ -72,9 +72,13 @@ const showpass = document.querySelector('.show');
 showpass.addEventListener('click',()=>{
     if(pw.type==="password"){
         pw.type="text";
+        showpass.style.color="#3498db";
+        showpass.textContent="HIDE"
     }
     else {
         pw.type="password";
+        showpass.style.color='#222';
+        showpass.textContent="SHOW";
     }
 })
 </script>
