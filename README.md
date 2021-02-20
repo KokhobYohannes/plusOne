@@ -13,4 +13,4 @@ Ali - Team Lead: SQL, Node, Databases (and some CSS)
 Arjun - Wireframe, Routes/Passport and APIs
 Duc - Javascript, HTML, CSS and Registration Page
 Danielle - APIs and User Testing
-Kokhob - HTML, CSS, Handlebars, User Testing
+Kokhob - HTML, CSS, Handlebars, User Testing.
