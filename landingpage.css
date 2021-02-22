@@ -1,6 +1,6 @@
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 7.5rem;
+    font-size: 6rem;
     color: rgb(243, 240, 237);
     text-align: center;
     width: 100%;
@@ -24,61 +24,35 @@ h3 {
     margin-bottom: 10px;
 }
 
+
 .btn {
     font-family: 'Poppins Light';
     font-weight: 300;
     font-size: 25px;
     align-items: center;
     color: white;
-    background-color:rgba(235, 180, 51, 0.8);
+    background-color:rgb(221, 161, 21);
     justify-content: center;
-    margin-left: 35%;
-    padding: 10px;
+    margin-left: 39%;
+    padding: 3%;
     margin-bottom: 2%;
-    width: 30%;
-    margin-top: 3%;
+    width: 22%;
+    margin-top: 1%;
+    border-radius: 100%;
+    border-color: white;
 }
 
 .btn:hover{
     background:rgba(23, 118, 195,0.8);
-    }  
-    
+    border-color: white;
+    } 
+
     .navbar{
-    width: 860px; 
-    margin: 0 0;
-    }
-    .navbar ul{
-    list-style: none;
-    margin-top: 2%;
-    }
-    .navbar ul li {
-    background-color:rgba(31, 22, 2, 0.8);
-    width: 250px;
-    border: 1px solid #fff;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    float: left;
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
-    position: relative;
+       background-color: whitesmoke;
     }
 
-    .navbar ul li:hover{
-    background:rgba(23, 118, 195,0.8);
-    }
-    
-    .navbar ul ul{
-    display: none;
-    }
-    .navbar ul li:hover > ul{
-    display: block;
-    }
-    .navbar ul ul ul{
-    margin-left: 170px;
-    top: 0;
-    width: auto;
-    position: relative;
+    .nav-link{
+        color: black;
+        font-weight: 600;
+        font-size: 1.3rem;
     }
