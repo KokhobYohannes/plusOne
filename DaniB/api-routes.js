@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const eventsList = document.getElementById("events-list");
+    const eventsList = $("#events-list");
     const eventsSearchInput = document.getElementById("events-search-input");
     const eventsSearchButton = document.getElementById("events-search-button");
 
@@ -13,11 +13,19 @@ $(document).ready(function () {
             dataType: "json",
             success: function(json) {
                         console.log(json);
-                        eventsList.innerHTML = "";
+                        eventsList.html("");
                         for (let attraction of json._embedded.attractions) {
+                            
                             let li = document.createElement("li");
                             li.innerText = `${attraction.name}`;
-                            eventsList.appendChild(li);
+                            let a = $("<a>").append($(li));
+                            let img = $("<img>").attr("src",attraction.images[7].url);
+                            img.attr("width", 200);
+                            img.attr("height", 150);
+                            a.attr("href", attraction.url);
+                            a.attr("target", "_blank");
+                            a.append(img);
+                            eventsList.append(a);
                         }
                     },
             error: function(xhr, status, err) {
@@ -27,7 +35,7 @@ $(document).ready(function () {
     })
 });
 
-
+displayWeather("Alpharetta");
 
 
 
