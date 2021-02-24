@@ -11,10 +11,12 @@
 section{
     /*background-color: #272629;*/
     background-color: rgb(64, 65, 75);
+    background-image:url('plusone.png');
     height: 100vh;
     width: auto;
     background-size: cover;
     background-position: center;
+    
     }
     
     /*section:after{
@@ -35,10 +37,14 @@ section{
         color: white;
         padding: 60px 100px;
         width: auto;
-        background: rgba(255,255,255,0.04);
-        box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
-        border-radius: 10px;
-        max-height: 80%;
+        /*background: rgb(189, 147, 58);*/
+        background: rgb(61, 36, 31);
+        opacity: 65%;
+        /*background: rgba(255,255,255,0.04);
+        box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);*/
+        border-radius: 30px;
+        max-height: auto;
+        box-shadow: 0 15px 25px rgb(218, 40, 40);
         
         
     }
@@ -55,6 +61,10 @@ section{
         margin: 0 0 15px 0;
         font-family: monospace, sans-serif;
         text-align: center;
+    }
+
+    medium{ font-size: x-large; 
+
     }
     
     span{
@@ -104,7 +114,7 @@ section{
         text-decoration: underline;
     }
     
-    button[type="button"] {
+    /*button[type="button"] {
         background: #3498db;
         cursor: pointer;
         color: white;
@@ -114,7 +124,7 @@ section{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         width: 100%;
     
-        
+        */
             /*position: absolute;
             top: 50%;
             left: 50%;*/
@@ -128,7 +138,7 @@ section{
             /*text-transform: uppercase;
             text-decoration: none;*/
             
-    }
+  /*  } */
           
     .btn:hover{
     background: rgb(76, 158, 224);
@@ -229,19 +239,25 @@ section{
       }
       
       /* Extra styles for the cancel button */
-      .cancelbtn {
-        padding: 14px 20px;
-        background-color: #f44336;
-      }
+    
       
       /* Float cancel and signup buttons and add an equal width */
       .cancelbtn, .signupbtn {
           
+        border-radius: 30px;
         
         width: 100%;
+        
+       
 
       }
 
+      .cancelbtn{
+          background: rgb(243, 96, 96);
+         
+      }
+
+      
       input[type=text], input[type=password]{
         box-sizing: border-box;
         background: rgba(0,0,0,0.10);
@@ -257,7 +273,7 @@ section{
       
       /* Add padding to container elements */
       .container {
-        padding: 20px;
+        padding: 40px;
       }
       
       /* Clear floats */

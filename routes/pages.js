@@ -6,12 +6,12 @@ router.get('/',(req, res)=>{
 })
 
 
-router.get("/",(req,res)=>{
+router.get("/login",(req,res)=>{
    
-    res.render('index');
+    res.render('login');
 });
 
-router.get("/signup",(req,res)=>{
+router.get('/signup',(req,res)=>{
     
     res.render('signup');
 });

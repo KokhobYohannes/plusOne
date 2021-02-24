@@ -9,7 +9,9 @@
 }   */
 
 section{
-background-color: #272629;
+background-image:url('plusone.png');
+
+/*background-color: #272629;*/
 height: 100vh;
 width: auto;
 background-size: cover;
@@ -31,11 +33,15 @@ background-position: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-   
+    /*background: rgb(78, 66, 78);*/
+    background: rgb(61, 36, 31);
+    opacity: 80%;
     padding: 60px 100px;
     width: auto;
-    background: rgba(255,255,255,0.04);
-    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75)
+    /*background: rgba(255,255,255,0.04);*/
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgb(218, 40, 40);
 }
 
 h3{
@@ -94,14 +100,18 @@ span{
 }
 
 button[type="button"] {
-    background: #3498db;
+    background: rgb(66, 116, 207);
     cursor: pointer;
     color: white;
     border: 1px solid #2691d9;
+    border-top: none;
     letter-spacing: 1px;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgb(38, 110, 168);
+   
 
     
         /*position: absolute;
@@ -118,7 +128,14 @@ button[type="button"] {
         text-decoration: none;*/
         
 }
-      
+ 
+.container span{
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+
 .btn:hover{
 background: rgb(76, 158, 224);
 }    
@@ -144,11 +161,13 @@ background: rgb(76, 158, 224);
     line-height: 45px;
     margin-top:10px;
     border-radius: 5px;
+    text-align: center;
    
 }
 .facebook{
-    background: #4267B2;
+    background: rgb(66, 116, 207);
     border: 1px solid #3e61a8;
+    box-shadow: 0 10px 25px rgb(38, 110, 168);
     
 }
 
@@ -160,7 +179,7 @@ background: rgb(76, 158, 224);
     background: #E1306C;
     border: 1px solid #df2060;
     margin-left:20px;
-    
+    box-shadow: 0 10px 25px rgb(226, 84, 143)
 }
 
 .instagram:hover{
@@ -171,6 +190,7 @@ background: rgb(76, 158, 224);
     font-size: 16px;
     color: white;
     letter-spacing: 1px;
+    
 }
 
 .signup{
