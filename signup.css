@@ -77,6 +77,7 @@ section{
     .container{
         color:white;
         position: absolute;
+        
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -90,17 +91,17 @@ section{
 
     .row label{
        font-weight: normal;
-       margin-top: 20px;
-       margin: 20px 15px;
+       margin-top: 10px;
+       margin: 10px 15px;
        color:white;
        font-size: 15px;
     }
 
 /* Full-width input fields */
-  input[type=text], input[type=password] {
+  input[type=text], input[type=password]{
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px 0 10px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
@@ -110,7 +111,15 @@ section{
   border-bottom: 1px solid white;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+small{
+  padding: 15px;
+  margin-top: 10px;
+  
+}
+
+
+
+input[type=text]:focus, input[type=password]:focus input [type=checkbox]{
     background-color: #ddd;
     outline: none;
   }
