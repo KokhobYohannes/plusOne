@@ -4,13 +4,14 @@ const path = require('path');
 const dotenv = require("dotenv");
 dotenv.config({path:'./.env'})
 
-const PORT= 3000;
+const PORT= 4240;
 const mysql = require("mysql");
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
     user: process.env.DATABASE_USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE,
+    port: process.env.DATABASE.PORT,
 })
 
 app.set('view engine', 'hbs');
@@ -28,7 +29,7 @@ db.connect((error)=>{
 
 //define Routes
 
-app.use('/', require('/routes/pages.js'));
+app.use('/', require('./routes/pages.js'));
 app.use('/auth',require('./routes/auth'));
 
 //make sure we can grab the data from any form
@@ -38,6 +39,6 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 
-app.listen(PORT, ()=>{
-    console.log('Server listening on: http://localhost:${PORT}');
+app.listen(PORT, () => {
+    console.log(`Server listening on: http://localhost:${PORT}`);
 })

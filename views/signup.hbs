@@ -17,21 +17,31 @@
 <body>
     <section> 
     <div>
+
     <form action="auth/signup" method="POST">
+       
         <div class="container">
-          <h1>Registration Form</h1>
+        <medium style="color:#FF0000">R</medium>
+        <medium style="color:#66CC66">E</medium>
+        <medium style="color:#FF9966">G</medium>
+        <medium style="color:#eff0f7">I</medium>
+        <medium style="color:#FF0066">S</medium>
+        <medium style="color:#FF0000">T</medium>
+        <medium style="color:#66CC66">E</medium>
+        <medium style="color:#FF9966">R</medium>
+     
           
           <hr>
           <div class="row">
             <label class="col-sm-2 col-md-4 control-label" for="First Name"><small>First Name</small></label>
                <div>
-            <input type="text" placeholder="First Name" name="firstname" required>
+            <input type="text" placeholder="First Name" name="first_name" required>
               </div>
         </div>
               <div class="row">
                 <label class="col-sm-2 col-md-4 control-label" for="Last name"><small>Last Name</small></label>
                    <div>
-                <input type="text" placeholder="Last Name" name="lastname" required>
+                <input type="text" placeholder="Last Name" name="last_name" required>
                   </div>
              </div>
 
@@ -45,7 +55,7 @@
         <div class="row">
           <label class="col-sm-2 col-md-4 control-label" for="psw"><small>Password</small></label>
           <div>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input type="password" placeholder="Enter Password" name="password" required>
             </div>
         </div>
 
@@ -90,7 +100,7 @@
     </div>
 
     {{#if message }}
-    <h4 class = "alert"
+    <h4 class = "alert"></h4>
 </section> 
 
 
