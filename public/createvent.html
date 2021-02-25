@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./createevent.css">
+    <title>Create Event| Plus One</title>
+</head>
+
+<body>
+    <div>
+        <style>
+            body {
+                background-image: url('https://images.unsplash.com/photo-1519671282429-b44660ead0a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right top;
+                background-attachment: fixed;
+            }
+        </style>
+        <header>
+            <nav class="navbar navbar-expand-lg justify-content-end">
+                <div class="container-fluid d-flex justify-content-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./landingpage.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"> Profile
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./signup.html">Register</a></li>
+                                    <li><a class="dropdown-item" href="./login.html">Sign In</a></li>
+                                </ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"> Events
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./createvent.html">Create Events</a></li>
+                                    <li><a class="dropdown-item" href="./findevents.html">Find Events</a></li>
+                                    <li><a class="dropdown-item" href="./eventinvite.html">Request an Event Invite</a></li>
+                                    <li><a class="dropdown-item" href="./reviews.html">Events & Guest Reviews</a></li>
+                                    <li><a class="dropdown-item" href="./reviewresponse.html">Respond to Reviews</a></li>
+                                </ul>  
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./aboutus.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <form>
+            <div class="jumbotron">
+                <h6 class="display-6">Create Your Event:</h6>
+                </div>
+            <div id="form">
+                <div class="row mb-3">
+                    <label for="inputEventName" class="col-sm-2 col-form-label">Event Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEventName" placeholder="Name Your Event">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="inputHostName" class="col-sm-2 col-form-label">Event Host</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputHostName"
+                            placeholder="Enter your full name here...">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputAddress"
+                            placeholder="Enter the event location here...">
+                    </div>
+                </div>
+
+                <div id="citystatezip" class="row g-3">
+                    <div class="col-sm-7">
+                        <input type="text" id="inputCity" class="form-control" placeholder="City" aria-label="City">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" placeholder="State" aria-label="State">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <label for="inputEventDescription" class="col-sm-2 col-form-label">Description</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEventDescription"
+                            placeholder="Let your guests know what to expect...">
+                    </div>
+                </div>
+
+
+                Select your event type:
+                <div class="row mb-3">
+                    <div class="col-sm-10 offset-sm-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Indoor Event
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck2">
+                            <label class="form-check-label" for="gridCheck2">
+                                Outdoor Event
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck3">
+                            <label class="form-check-label" for="gridCheck3">
+                                Virtual Event
+                            </label>
+                        </div>
+                        
+                        <div class="form-group" id="numberofattendees">
+                            <label for="exampleFormControlSelect1">Number of attendees</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2-5</option>
+                                <option>6-10</option>
+                                <option>10+</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-datetime-local-input" class="col-2 col-form-label">Date and time</label>
+                    <div class="col-10">
+                        <input class="form-control" type="datetime-local" value="2021-02-24T19:00:00"
+                            id="example-datetime-local-input">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+</body>
+
+</html>
