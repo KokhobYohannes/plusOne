@@ -62,7 +62,7 @@
         <div class="row">
           <label class="col-sm-2 col-md-4 control-label" for="psw-repeat"><small>Repeat Password</small></label>
             <div>
-          <input type="password" placeholder="Repeat Password" name="passwordconfirm" required>
+          <input type="password" placeholder="Repeat Password" name="passwordConfirm" required>
             </div>
         </div>
 
@@ -100,7 +100,8 @@
     </div>
 
     {{#if message }}
-    <h4 class = "alert"></h4>
+      <h4 class="alert alert-danger mt-4">{{message}}</h4>
+    {{/if}}
 </section> 
 
 
