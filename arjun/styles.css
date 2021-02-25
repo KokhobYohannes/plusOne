@@ -1,0 +1,147 @@
+.navbar{
+    color: white;
+    background-color: black;
+    height: 80px;
+    
+}
+.navbar-brand{
+    margin-left: 50px;
+}
+.items{
+   float: right;
+   margin-left: auto;
+}
+.nav-item{
+    margin: 0 30px;
+}
+.activity-col{
+    background-color:#08585c;
+    height: 100vh;
+}
+.activity-list{
+    list-style: none;
+    margin: 30px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.li{
+    margin: 20px 10px;
+}
+.a-list{
+  text-decoration: none;
+  color: white;  
+}
+.a-list:hover{
+    color: lightblue
+}
+.body{
+    background-color:#08585c;
+    position: relative;
+    overflow-x: hidden;
+}
+.logo{
+    background-color: blueviolet;
+    border-radius: 50px;
+}
+.card-container .card-container2{
+    display: flex;
+    flex-direction: row;
+}
+.card-container2{
+    display: flex;
+    flex-direction: row; 
+}
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.card-body{
+    background-color: #08585c;
+    color: white;
+}
+.items-col{
+    margin-right: 15px;
+}
+.btn-primary{
+    margin-right: 9px;
+}
+.video-container{
+    height: 360px;
+    width: 610px;
+    transform: translate(50%, 0%);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 4;
+    box-shadow: 2px 2px 2px black;
+    
+}
+.dismiss-btn{
+    position: relative;
+    float: right;
+    display: flex;
+    height: 40px;
+    width: 90px;
+}
+.hide{
+    display: none;
+}
+.my-modal{
+    transform: translate(5%, 30%);
+    height: 460px;
+    width: 600px;
+    background-color: transparent;
+    position: relative;
+}
+.close-button{
+    background-color: white;
+    float: right;
+    font-size: 18px;
+    position: relative;
+
+}
+
+.player{
+    height: 100%;
+    width: 100%;
+}
+.modal-header{
+    background-color: black;
+}
+.modal-body{
+    background-color: black;
+    
+}
+#mymodal{
+    height: 600px;
+    width: 700px;
+}
+
+.movie-modal{
+   transform: translate(0%, 0%);
+   height: auto;
+   width: 500px;
+  
+}
+
+.modal-content{
+  background-color: black;
+}
+.movie-input{
+    all: unset;
+width: 100%;
+background-color: rgb(251, 247, 247);
+color:black;
+}
+.search-button{
+    width: auto;
+    
+}
+.modal-footer{
+    background-color:  rgb(189, 167, 167);;
+    color: white;
+}
