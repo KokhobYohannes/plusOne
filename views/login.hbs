@@ -63,10 +63,15 @@
 
             <!--signup for new user-->
             <div class="signup">Don't have an account ?
-                <a href="signup.html">Signup Now</a>
+                <a href="/signup">Signup Now</a>
             </div>
         </form>
     </div>
+
+     {{#if message }}
+      <h4 class="alert alert-danger mt-4">{{message}}</h4>
+    {{/if}}
+    
 </section>
 
 <script>

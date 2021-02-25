@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const dotenv = require("dotenv");
-dotenv.config({path:'./.env'})
-
-const PORT= 4240;
+const dotenv = require('dotenv');
+dotenv.config({path:'./.env'});
+const cookiesParser = require('cookie-parser');
 const mysql = require("mysql");
+const PORT= 4240;
+
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
     user: process.env.DATABASE_USER,
@@ -16,8 +17,14 @@ const db = mysql.createConnection({
 
 app.set('view engine', 'hbs');
 
-const publicDirectory = path.join(__dirname,'./public')
+const publicDirectory = path.join(__dirname,'./public');
 app.use(express.static(publicDirectory));
+
+
+//parse URL-encoded bodies (as sent by HTML forms)
+//make sure we can grab the data from any form
+app.use(express.urlencoded({extended: false}));
+
 db.connect((error)=>{
     if(error){
         console.log(error)
@@ -27,17 +34,17 @@ db.connect((error)=>{
     }
 })
 
-//define Routes
 
-app.use('/', require('./routes/pages.js'));
-app.use('/auth',require('./routes/auth'));
 
-//make sure we can grab the data from any form
-app.use(express.urlencoded({extended: false}));
 
 //grab the form coming in as json
 app.use(express.json());
+app.use(cookiesParser());
 
+//define Routes
+
+app.use('/', require('./routes/pages'));
+app.use('/auth',require('./routes/auth'));
 
 app.listen(PORT, () => {
     console.log(`Server listening on: http://localhost:${PORT}`);
