@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/auth');
-
+const path = require('path');
 
 router.get('/',authController.isLoggedIn,(req, res)=>{
     res.render('index',{
@@ -18,6 +18,11 @@ router.get("/login",(req,res)=>{
 router.get('/signup',(req,res)=>{
     
     res.render('signup');
+});
+
+router.get('/eventsinvite',(req,res)=>{
+    
+    res.sendFile(path.join(__dirname,'../public/') +'eventinvite.html');
 });
 
 router.get('/profile', authController.isLoggedIn, (req,res)=>{

@@ -1,0 +1,295 @@
+/*{ 
+    margin: 0;
+    padding; 0;
+    box-sizing: border-box;
+}
+
+/*body{
+    background-image: url("bg.jpg");
+}   */
+
+section{
+    /*background-color: #272629;*/
+    background-color: rgb(64, 65, 75);
+    background-image:url('images/plusone.png');
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    
+    }
+    
+    /*section:after{
+        position: absolute;
+        content:'';
+        top: 0;
+        left: 0;
+        height:100%;
+        width:100%;
+        background: rgba(0,0,0,0.7);
+    }*/
+    
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        padding: 60px 100px;
+        width: auto;
+        /*background: rgb(189, 147, 58);*/
+        background: rgb(61, 36, 31);
+        opacity: 65%;
+        /*background: rgba(255,255,255,0.04);
+        box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);*/
+        border-radius: 30px;
+        max-height: auto;
+        box-shadow: 0 15px 25px rgb(218, 40, 40);
+        
+        
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+    
+    h1{
+        color: #e213a4;
+        font-size:30px;
+        font-weight: 600;
+        margin: 0 0 15px 0;
+        font-family: monospace, sans-serif;
+        text-align: center;
+    }
+
+    medium{ font-size: x-large; 
+
+    }
+    
+    span{
+        color: #222;
+        width: 40px;
+        line-height: 45px;
+        margin: 12px;
+        
+    }
+    
+    .form-group{
+        position: relative;
+        height: 45px;
+        width:100%;
+        display: flex;
+        background: rgba(255,255,255,0.94);
+    }
+    
+    .form-group input{
+        height:100%;
+        width:100%;
+        background: transparent;
+        border:none;
+        outline:none;
+        color:#222;
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+    
+    .field{
+        margin-top:16px;
+    
+    }
+    
+    .pass{
+        text-align: left;
+        margin: 10px 0;
+    }
+    
+    .pass a{
+        color: white;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+    
+    .pass:hover a{
+        text-decoration: underline;
+    }
+    
+    /*button[type="button"] {
+        background: #3498db;
+        cursor: pointer;
+        color: white;
+        border: 1px solid #2691d9;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+    
+        */
+            /*position: absolute;
+            top: 50%;
+            left: 50%;*/
+            /*transform: translate(-50%,-50%);
+            /*width: 200px;*/
+            /*height: 60px;*/
+            /*text-align: center;
+            /*line-height: 60px;
+            color: #fff;
+            font-size: 24px;
+            /*text-transform: uppercase;
+            text-decoration: none;*/
+            
+  /*  } */
+          
+    .btn:hover{
+    background: rgb(76, 158, 224);
+    }    
+    
+    
+    
+    
+    .login{
+        color:white;
+        margin: 20px 0;
+    
+    }
+    
+    .link{
+        display: flex;
+        cursor: pointer;
+        color: white;
+        margin:0 0 20px 0;
+    }
+    .facebook, .instagram{
+        width: 100%;
+        height: 42px;
+        line-height: 45px;
+        margin-top:10px;
+        border-radius: 5px;
+       
+    }
+    .facebook{
+        background: #4267B2;
+        border: 1px solid #3e61a8;
+        
+    }
+    
+    .facebook:hover{
+        transform: translatey(-7px);
+    }
+    
+    .instagram{
+        background: #E1306C;
+        border: 1px solid #df2060;
+        margin-left:20px;
+        
+    }
+    
+    .instagram:hover{
+        transform: translatey(-7px);
+    }
+    
+    .link span{
+        font-size: 16px;
+        color: white;
+        letter-spacing: 1px;
+    }
+    
+    .signup{
+        color: white;
+        font-size: 20px;
+    }
+    
+    .signup a{
+        color: #3498db;
+        text-decoration: none;
+    }
+    
+    .signup a:hover{
+        text-decoration: underline;
+    }
+    
+    .show{
+        position: absolute;
+        right: 13px;
+        top: -10px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        display: none;
+    }
+    /*show password*/
+    .password:valid ~ .show{
+        display:block;
+    }
+    
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+      
+      button:hover {
+        opacity:1;
+      }
+      
+      /* Extra styles for the cancel button */
+    
+      
+      /* Float cancel and signup buttons and add an equal width */
+      .cancelbtn, .signupbtn {
+          
+        border-radius: 30px;
+        
+        width: 100%;
+        
+       
+
+      }
+
+      .cancelbtn{
+          background: rgb(243, 96, 96);
+         
+      }
+
+      
+      input[type=text], input[type=password]{
+        box-sizing: border-box;
+        background: rgba(0,0,0,0.10);
+        outline: none;
+        border: none;
+        border-bottom: 1px solid;
+       border-radius: 5px;
+       margin: 5px;
+       color: white;
+
+      }
+     
+      
+      /* Add padding to container elements */
+      .container {
+        padding: 40px;
+      }
+      
+      /* Clear floats */
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      /* Change styles for cancel button and signup button on extra small screens */
+      @media screen and (max-width: 300px) {
+        .cancelbtn, .signupbtn {
+          width: 100%;
+        }
+      }
+      
+    
+    
+    

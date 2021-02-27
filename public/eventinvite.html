@@ -7,15 +7,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
     integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
     crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<link rel="stylesheet" href="./landingpage.css">
+<link rel="stylesheet" href="styles/landingpage.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./aboutus.css">
+    <link rel="stylesheet" href="styles/aboutus.css">
     <title>Event Invitation | Plus One</title>
 </head>
 
@@ -23,11 +24,20 @@
     <div>
         <style>
             body {
-                background-image: url('plusone.png');
+                background-image: url('images/plusone.png');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: right top;
                 background-attachment: fixed;
+            }
+
+            #content {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15%;
+                padding:1%;
+                background-color:  rgba(245, 239, 175, 0.479);
             }
         </style>
   <header>
@@ -72,6 +82,34 @@
     </nav>
 </header>
      
+
+<div id="content"> 
+    <table class='table table-hover'>
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Host Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Description</th>
+                <th>Indoor Event</th>
+                <th>Outdoor Event</th>
+                <th>Virtual Event</th>
+                <th>Date Time</th>
+                <th>Number of Attendees</th>
+                <th>Status</th>
+                <th>Approve</th>
+                <th>Deny</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="table-results">
+        </tbody>
+
+    </table>
+</div>
+
+<script src="scripts/event-invite.js"></script>
 </body>
 
 </html>
