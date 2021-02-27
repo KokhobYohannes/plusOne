@@ -11,7 +11,7 @@ var attractionsBtn = document.getElementById("attractions");
 
 console.log("Connected");
 
-let key = "jlzdij2J5YYeKFbVYCwvGHZdsCGH2cca";
+let key = "8EBNM2k8I60gBeDL7Wo3OeCe3GPKdVB5";
 let zipCode = 20001;
 
 // axios
