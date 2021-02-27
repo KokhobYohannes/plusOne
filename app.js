@@ -4,16 +4,17 @@ const path = require('path');
 const dotenv = require('dotenv');
 dotenv.config({path:'./.env'});
 const cookiesParser = require('cookie-parser');
-const mysql = require("mysql");
 const PORT= 4240;
+const db = require("./models"); 
 
+/*
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
     user: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE,
     port: process.env.DATABASE.PORT,
-})
+})*/ 
 
 app.set('view engine', 'hbs');
 
@@ -24,7 +25,7 @@ app.use(express.static(publicDirectory));
 //parse URL-encoded bodies (as sent by HTML forms)
 //make sure we can grab the data from any form
 app.use(express.urlencoded({extended: false}));
-
+/*
 db.connect((error)=>{
     if(error){
         console.log(error)
@@ -33,6 +34,7 @@ db.connect((error)=>{
         console.log("MySQL connected")
     }
 })
+*/
 
 
 
@@ -45,7 +47,11 @@ app.use(cookiesParser());
 
 app.use('/', require('./routes/pages'));
 app.use('/auth',require('./routes/auth'));
+require('./routes/api-routes.js')(app);
 
-app.listen(PORT, () => {
-    console.log(`Server listening on: http://localhost:${PORT}`);
-})
+
+// Syncing our sequelize models and then starting our Express app
+db.sequelize.sync().then(() => {
+    app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
+  });
+  
