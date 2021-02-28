@@ -14,6 +14,7 @@
 .nav-item{
     margin: 0 30px;
 }
+/* header navbar ends here */
 .activity-col{
     background-color:#08585c;
     height: 100vh;
@@ -35,6 +36,7 @@
 .a-list:hover{
     color: lightblue
 }
+/* persistent sidebar ends here*/
 .body{
     background-color:#08585c;
     position: relative;
@@ -44,7 +46,7 @@
     background-color: blueviolet;
     border-radius: 50px;
 }
-.card-container .card-container2{
+.card-container{
     display: flex;
     flex-direction: row;
 }
@@ -52,15 +54,24 @@
     display: flex;
     flex-direction: row; 
 }
+.card-container3{
+    display: flex;
+    flex-direction: row; 
+}
 .card{
-    width: 300px;
-    height: 300px;
+    height: 490px;
+    width: 340px;
     margin: 10px;
     box-shadow: 2px 2px 2px 2px black;
 }
 .card-body{
     background-color: #08585c;
     color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-footer{
+    background-color: #08585c;
 }
 .items-col{
     margin-right: 15px;
@@ -132,10 +143,7 @@
   background-color: black;
 }
 .movie-input{
-    all: unset;
-width: 100%;
-background-color: rgb(251, 247, 247);
-color:black;
+    width: 70%;
 }
 .search-button{
     width: auto;
@@ -144,4 +152,25 @@ color:black;
 .modal-footer{
     background-color:  rgb(189, 167, 167);;
     color: white;
+}
+.list-dropdown{
+    list-style-type: none;
+}
+.list-button{
+    margin-top: 10px;
+    width: auto;
+}
+.add-button{
+    margin-left: 5px;
+}
+.err-message{
+    color: white;
+}
+#searchmodal{
+    transform: translate(0%, 0%);
+
+}
+.zip-search{
+    width: 80%;
+    margin-right: 5px;
 }
