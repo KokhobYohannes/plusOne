@@ -7,6 +7,8 @@ const cookiesParser = require('cookie-parser');
 const PORT= 4240;
 const db = require("./models"); 
 
+let connection = require('./database/connect');
+
 /*
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
