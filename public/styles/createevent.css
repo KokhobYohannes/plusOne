@@ -36,6 +36,10 @@ h3 {
         padding: 1%;
     }
 
+    #inputEventDescription{
+        padding-bottom: 3%;
+    }
+
     #inputCity{
         margin-left: 29.5%;
         width: 70%;
@@ -46,12 +50,15 @@ h3 {
         margin-left: 2%;
         margin-right: 30%;
         padding: 1%;
-        box-shadow: 20px 20px 40px 5px rgb(247, 248, 248);
+        box-shadow: 20px 10px 40px 2px rgb(244, 245, 245);
+        color:rgb(71, 71, 71);
     }
 
     .jumbotron{
         margin-bottom: 0%;
         font-family:'Playfair Display';
+        box-shadow: 20px 10px 40px 9px rgb(244, 245, 245);
+        background-color: rgba(231, 229, 229,0.94);
     }
     
     #citystatezip{
@@ -72,4 +79,10 @@ h3 {
         margin-top: 2%;
     }
     
+    h6{
+       color: rgb(85, 84, 84);
+    }
     
+    .logo{
+        margin-left: 30%;
+    }

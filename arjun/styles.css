@@ -1,4 +1,4 @@
-.navbar{
+/*.navbar{
     color: white;
     background-color: black;
     height: 80px;
@@ -15,36 +15,59 @@
     margin: 0 30px;
 }
 /* header navbar ends here */
+
+body {
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/281-pai2375-eye-l.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9efba91369a2f9059c1db59835bc9417");
+    background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+}
+
+.navbar{
+    background-color: whitesmoke;
+ }
+
+ .nav-link{
+     color: black;
+     font-weight: 600;
+     font-size: 1.3rem;
+ }
+
+
 .activity-col{
-    background-color:#08585c;
     height: 100vh;
+    margin-left: 43%;
+    margin-top: 65%;
+    color: rgb(73, 72, 72);
+
 }
 .activity-list{
     list-style: none;
-    margin: 30px 20px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
+    margin-top: 50%;
 }
 .li{
     margin: 20px 10px;
 }
 .a-list{
   text-decoration: none;
-  color: white;  
+  color: rgb(73, 72, 72);
+  line-height: 1.5;
 }
 .a-list:hover{
     color: lightblue
 }
 /* persistent sidebar ends here*/
 .body{
-    background-color:#08585c;
+    background-color:rgb(131, 127, 127);
     position: relative;
     overflow-x: hidden;
 }
 .logo{
-    background-color: blueviolet;
-    border-radius: 50px;
+    margin-left: 90%;
 }
 .card-container{
     display: flex;
@@ -61,23 +84,25 @@
 .card{
     height: 490px;
     width: 340px;
-    margin: 10px;
+    margin-top: 10px;
     box-shadow: 2px 2px 2px 2px black;
 }
 .card-body{
     background-color: #08585c;
     color: white;
-    align-items: center;
+    align-items: left;
     justify-content: space-around;
 }
 .card-footer{
     background-color: #08585c;
+    border: whitesmoke;
 }
 .items-col{
     margin-right: 15px;
 }
 .btn-primary{
-    margin-right: 9px;
+    margin-left: 5%;
+    background-color: lightblue;
 }
 .video-container{
     height: 360px;
@@ -88,7 +113,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     z-index: 4;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgb(61, 61, 61);
     
 }
 .dismiss-btn{
@@ -124,7 +149,7 @@
     background-color: black;
 }
 .modal-body{
-    background-color: black;
+    background-color: rgb(0, 57, 71);
     
 }
 #mymodal{
@@ -136,18 +161,17 @@
    transform: translate(0%, 0%);
    height: auto;
    width: 500px;
-  
 }
 
 .modal-content{
   background-color: black;
 }
 .movie-input{
-    width: 70%;
+    width: 75%;
 }
+
 .search-button{
-    width: auto;
-    
+    width: auto;    
 }
 .modal-footer{
     background-color:  rgb(189, 167, 167);;
@@ -171,6 +195,7 @@
 
 }
 .zip-search{
-    width: 80%;
+    width: 75%;
+    height: 5vh;
     margin-right: 5px;
 }
