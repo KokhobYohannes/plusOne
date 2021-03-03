@@ -29,7 +29,7 @@ searchButton.addEventListener('click', function() {
               // if logo or poster available or not if not use local image
              var imageCode = result['results'][i].poster_path
              if (result['results'][i].poster_path === null) {
-                 image.src = 'logo.PNG';
+                 image.src = 'plusonelogo.png';
               }
               else{ image.src = `https:image.tmdb.org/t/p/w300/${imageCode}`; }
               image.classList.add('card-top-img')
@@ -53,7 +53,7 @@ searchButton.addEventListener('click', function() {
                var watchId = result['results'][i].id;
                // setting attribute if poster available or not
                 if (result['results'][i].poster_path === null) {
-                 addBtn.setAttribute('img_src', 'logo.PNG')
+                 addBtn.setAttribute('img_src', 'plusonelogo.png')
                 }
                 else{ addBtn.setAttribute('img_src', `https:image.tmdb.org/t/p/w300/${imageCode}`)};
                 addBtn.setAttribute('movie_name', movie_name );
