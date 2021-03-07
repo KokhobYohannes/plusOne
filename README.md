@@ -24,3 +24,5 @@ Acceptance criteria:
 3) Duc - Javascript, HTML, CSS and Registration Page
 4) Danielle - APIs and User Testing
 5) Kokhob - HTML, CSS, Handlebars, User Testing
+
+***Notes***: There were complications while deploying to Heroku due some code written in sequelize and sql. Please refer to the demo video provided for a better understanding of the functionality and features of Plus One. For any other questions or comments, please email them to me at kokhobyohannes@gmail.com
