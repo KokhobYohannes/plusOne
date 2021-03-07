@@ -14,6 +14,10 @@ Acceptance criteria:
 
 **APIs:** TMDB, TicketMaster
 
+**Demo:** https://www.youtube.com/watch?v=F_rM8cu-lEw&feature=youtu.be 
+
+**Presentation:** https://www.canva.com/design/DAEXeURZdoI/jLRB73Kmr7FSRVw4zfF1dg/view#1
+
 **Task Delegation:**
 1) Ali - Team Lead: SQL, Node, Databases (and some CSS)
 2) Arjun - Wireframe, Routes/Passport and APIs
