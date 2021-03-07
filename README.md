@@ -12,7 +12,7 @@ Acceptance criteria:
 
 **Data Flow:** https://github.com/KokhobYohannes/plusOne/tree/main/flowchart
 
-APIs: TMDB, TicketMaster
+**APIs:** TMDB, TicketMaster
 
 **Task Delegation:**
 1) Ali - Team Lead: SQL, Node, Databases (and some CSS)
