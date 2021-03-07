@@ -10,9 +10,9 @@ Acceptance criteria:
 3) I can create an account and log in to keep track my events and view my profile with contact information.
 
 
-**Data Flow:** TBD
+**Data Flow:** <a href="https://github.com/KokhobYohannes/plusOne/tree/main/flowchart"></a>
 
-APIs: TBD
+APIs: TMDB, TicketMaster
 
 **Task Delegation:**
 1) Ali - Team Lead: SQL, Node, Databases (and some CSS)
